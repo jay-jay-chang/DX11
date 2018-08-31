@@ -50,7 +50,7 @@ void PolygonLayout::SetNormal(D3D11_INPUT_ELEMENT_DESC& polygonLayout, UINT alig
 	polygonLayout.SemanticIndex = 0;
 	polygonLayout.Format = DXGI_FORMAT_R32G32B32_FLOAT;
 	polygonLayout.InputSlot = 0;
-	polygonLayout.AlignedByteOffset = D3D11_APPEND_ALIGNED_ELEMENT;
+	polygonLayout.AlignedByteOffset = alignOffset;
 	polygonLayout.InputSlotClass = D3D11_INPUT_PER_VERTEX_DATA;
 	polygonLayout.InstanceDataStepRate = 0;
 
